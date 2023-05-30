@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_vh_movie"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMovieImage"
+        app:srcCompat="@drawable/placeholder_wolverine_image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_movie_image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieName"
+        android:text="West World"
+        android:maxLines="2"
+        android:layout_below="@id/ivMovieImage"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLove"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorGrey"
+        app:srcCompat="@drawable/ic_baseline_favorite_24"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_below="@id/tvMovieName"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"/>
+
+    <TextView
+        android:id="@+id/tvLoveCount"
+        android:layout_below="@id/tvMovieName"
+        android:text="20%"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivLove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

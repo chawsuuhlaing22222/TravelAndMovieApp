@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="@dimen/margin_medium_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMovieImageUpComming"
+        app:srcCompat="@drawable/placeholder_wolverine_image"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/width_vh_movie"
+        android:layout_height="@dimen/height_movie_image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieNameUpComming"
+        android:text="West World"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/ivMovieImageUpComming"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieDesc"
+        android:text="West World"
+        android:maxLines="4"
+       android:layout_below="@id/tvMovieNameUpComming"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/ivMovieImageUpComming"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/colorGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLoveUpComming"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorGrey"
+        app:srcCompat="@drawable/ic_baseline_favorite_24"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_below="@id/tvMovieDesc"
+        android:layout_toEndOf="@id/ivMovieImageUpComming"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"/>
+
+    <TextView
+        android:id="@+id/tvLoveCountInUpComming"
+        android:layout_below="@id/tvMovieDesc"
+        android:text="20%"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivLoveUpComming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivComment"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorGrey"
+        app:srcCompat="@drawable/ic_baseline_mode_comment_24"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_below="@id/tvMovieDesc"
+        android:layout_toEndOf="@id/tvLoveCountInUpComming"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"/>
+
+    <TextView
+        android:id="@+id/tvCmtCountInUpComming"
+        android:layout_below="@id/tvMovieDesc"
+        android:text="20%"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/chivo_bold"
+        android:textColor="@color/colorGrey"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="ActivityTransaction">
+        <item name="android:activityOpenEnterAnimation">@anim/animation_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/animation_slide_out_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/animation_slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/animation_slide_in_left</item>
+    </style>
+
+    <style name="tabTextStyle" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+
+    </style>
+    
+</resources>
