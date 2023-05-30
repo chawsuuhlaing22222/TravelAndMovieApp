@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/trvel" />
+            app:srcCompat="@drawable/welcome_3x" />
 
         <View
             android:layout_width="match_parent"

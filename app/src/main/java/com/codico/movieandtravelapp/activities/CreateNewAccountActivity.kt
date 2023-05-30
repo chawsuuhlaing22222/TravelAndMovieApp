@@ -126,7 +126,7 @@ class CreateNewAccountActivity : AppCompatActivity() {
 
         //date check
         var dob=edtDateOfBirth.text?.trim().toString()
-        if(!dob.isNullOrEmpty()){
+        if(!dob.isNullOrEmpty() && dob!="DD/MM/YYYY"){
             var age = current_year.minus(selectedYear)
             if (age < 10) {
                 flagAge = false
