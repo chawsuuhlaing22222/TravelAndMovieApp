@@ -197,6 +197,7 @@
             android:id="@+id/ivDateOfBirth"
             android:layout_width="@dimen/dimen_50dp"
             android:layout_height="@dimen/dimen_25"
+            android:layout_marginStart="-20dp"
             android:layout_toEndOf="@id/textInputLayoutDateOfBirth"
             android:layout_below="@id/textInputLayoutEmailAddress"
             android:layout_alignBottom="@id/textInputLayoutDateOfBirth"
