@@ -9,6 +9,7 @@ import android.widget.DatePicker
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.codico.movieandtravelapp.R
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_create_new_account.*
 import java.util.*
 import java.util.regex.Pattern
@@ -131,6 +132,7 @@ class CreateNewAccountActivity : AppCompatActivity() {
             if (age < 10) {
                 flagAge = false
                 edtDateOfBirth.error = "You must not be under 10"
+                Snackbar.make(window.decorView,"Age must not be under 10",Snackbar.LENGTH_SHORT).show()
             }else{
                 flagAge = true
             }

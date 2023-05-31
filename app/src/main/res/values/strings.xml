@@ -8,13 +8,13 @@
     <string name="almost_there">Almost There!</string>
     <string name="lbl_instruction">Complete the form below to create your ready to travel account</string>
     <string name="lbl_first_name">First Name*</string>
-    <string name="second_name">Second Name*</string>
+    <string name="second_name">Second Name</string>
     <string name="email_address">Email Address*</string>
     <string name="date_of_birth">Date of Birth*</string>
     <string name="female">Female</string>
     <string name="male">Male</string>
-    <string name="nationality">Nationality*</string>
-    <string name="country_of_residence">Country Of Residence*</string>
+    <string name="nationality">Nationality</string>
+    <string name="country_of_residence">Country Of Residence</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mtrl_picker_confirm" description="Button text to indicate that the widget will save the user's selection [CHAR_LIMIT=16]">@android:string/ok</string>
