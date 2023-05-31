@@ -51,6 +51,10 @@ class MovieDetailActivity : AppCompatActivity(),MovieDetailView {
         ivLoveDetail.setOnClickListener {
             mMovie?.let { it1 -> mPresenter.onLoveMovie(it1) }
         }
+
+        ivBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setUpRecycler() {
